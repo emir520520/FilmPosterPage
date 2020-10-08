@@ -1,0 +1,72 @@
+/*
+Name: Yuxiao Fang
+Student Number: 991576960
+*/
+
+body{
+	background:url("../images/pass.jpg");
+	background-size:cover;
+	background-color:rgba(255,255,255,0.5);
+	background-blend-mode:lighten;
+}
+
+.grid-container {
+  display: grid;
+  grid:
+    '. header header header header .'
+    'moviedata moviedata moviedata moviedata moviedata moviedata'
+	'actordata1 actordata1 actordata1 actordata2 actordata2 actordata2'
+	'footer footer footer footer footer footer'; 
+}
+
+header{
+	grid-area: header;
+	background-color:rgba(255,255,225,0.2);
+	font-size:2.3em;
+	font-weight:bold;
+	text-align:center;
+}
+
+.flex-container1{
+	display: flex;
+	grid-area: moviedata;
+}
+
+.flex-container1>figure{
+	margin:10px;
+	padding:30px;
+}
+
+.imagesize1{
+	width:44vw;
+	height:80vh;
+}
+
+.flex-container2{
+	display:flex;
+	grid-area:actordata1;
+	flex-wrap: wrap;
+}
+
+.flex-container3{
+	display:flex;
+	grid-area:actordata2;
+	flex-wrap: wrap;
+}
+
+.imagesize2{
+	width:16vw;
+	height:38vh;
+}
+
+.flex-container4{
+	display: flex;
+	grid-area: footer;
+}
+
+.footer{
+	font-size:3em; 
+	font-weight:bold; 
+	width:50vw; 
+	text-align:center;
+}
